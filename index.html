@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InkDrop - Online Stationery Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>InkDrop</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Your Favorite Online Stationery Store</h2>
+        <p>Buy books, pens, notebooks, and more!</p>
+        <button onclick="shopNow()">Shop Now</button>
+    </section>
+
+    <section class="products">
+        <h2>Featured Products</h2>
+        <div class="product">
+            <img src="pen.jpg" alt="Pen">
+            <h3>Fountain Pen</h3>
+            <p>$5.99</p>
+        </div>
+        <div class="product">
+            <img src="notebook.jpg" alt="Notebook">
+            <h3>Notebook</h3>
+            <p>$3.99</p>
+        </div>
+        <div class="product">
+            <img src="book.jpg" alt="Book">
+            <h3>Stationery Book</h3>
+            <p>$7.50</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 InkDrop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - InkDrop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>InkDrop</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="shop">
+        <h2>All Products</h2>
+        <div class="product">
+            <img src="pen.jpg" alt="Pen">
+            <h3>Fountain Pen</h3>
+            <p>$5.99</p>
+            <button onclick="addToCart('Fountain Pen', 5.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="notebook.jpg" alt="Notebook">
+            <h3>Notebook</h3>
+            <p>$3.99</p>
+            <button onclick="addToCart('Notebook', 3.99)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="book.jpg" alt="Book">
+            <h3>Stationery Book</h3>
+            <p>$7.50</p>
+            <button onclick="addToCart('Stationery Book', 7.50)">Add to Cart</button>
+        </div>
+        <!-- Waxaad ku dari kartaa alaab dheeraad ah halkan -->
+    </section>
+
+    <footer>
+        <p>&copy; 2026 InkDrop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Professional Checkout Form -->
+<div id="checkout-form-container">
+    <h3>Checkout Information</h3>
+    <form id="checkout-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="address">Shipping Address:</label>
+        <textarea id="address" required></textarea>
+
+        <label for="payment">Payment Method:</label>
+        <select id="payment" required>
+            <option value="paypal">PayPal</option>
+            <option value="card">Credit/Debit Card</option>
+        </select>
+
+        <button type="submit">Confirm Order</button>
+    </form>
+</div>
+<img src="https://images.unsplash.com/photo-1581092795361-0d2a9021f2b7?auto=format&fit=crop&w=150&q=80" alt="Fountain Pen" width="150" height="150">
+<img src="https://images.unsplash.com/photo-1586023492129-50d1b3c4e212?auto=format&fit=crop&w=150&q=80" alt="Notebook" width="150" height="150">
+<img src="https://images.unsplash.com/photo-1573164574393-d4a9782f78e3?auto=format&fit=crop&w=150&q=80" alt="Book" width="150" height="150">
+
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWCAYAAACf0yWQAAA..." alt="Pen" width="150" height="150">
+
